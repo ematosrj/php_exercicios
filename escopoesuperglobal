@@ -1,0 +1,20 @@
+EXERCICIOS SUPERGLOBAL
+
+
+<?php
+
+$nome = "Glaucio";
+
+function teste() {
+global $nome;
+echo $nome;
+}
+
+function teste2() {
+    $nome = " Enes";
+    echo $nome." agora no teste2";
+}
+
+teste();
+teste2();
+?>
